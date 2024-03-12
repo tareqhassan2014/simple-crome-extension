@@ -1,0 +1,58 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+}
+
+.logo:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* @keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.logo {
+    animation: logo-spin infinite 20s linear;
+} */
+
+/* create an animation for the logo class
+where the logo rotate 10deg left then 10deg right
+infinite time it will start slow but end firstly */
+
+@keyframes logo-spin {
+    0% {
+        transform: rotate(-20deg);
+    }
+    50% {
+        transform: rotate(20deg);
+    }
+    100% {
+        transform: rotate(-20deg);
+    }
+}
+
+.logo {
+    animation: logo-spin infinite 1s ease-in-out;
+}
+
+.card {
+    padding: 2em;
+}
+
+.read-the-docs {
+    color: #888;
+}
